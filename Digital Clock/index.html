@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+
+    <style>
+         body{
+            background-color: rgb(25, 24, 24);
+        } 
+        .container{
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            height: 180px;
+            width: 500px;
+            border-radius: 12px;
+            background: #490808;
+            box-shadow:  11px 11px 24px #000000,
+             -11px -11px 24px #000000;
+        }
+        .clock{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            color: #ece908;
+            font-size: 60px;
+            letter-spacing: 7px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="MyClockDisplay" class="clock" onload="showTime()">
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
