@@ -1,0 +1,835 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/3.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.navbar{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo{
+    width: 80px;
+    cursor: pointer;
+}
+
+
+
+button{
+    color: #fbfcfd;
+    padding: 10px 25px;
+    background: transparent;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    outline: none;
+    cursor: pointer;
+}
+.navbar button:hover{
+    color: #359381;
+    background-color: #fbfcfd;
+    border: transparent;
+    padding: 10px 25px;
+    border-radius: 20px;
+    outline: none;
+}
+
+
+.content{
+    color: #fbfcfd;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%);
+    z-index: 2;
+}
+
+h6{
+    margin-left: 35%;
+    opacity: 0.9;
+    filter: blur(0.5px);
+}
+h1{
+    font-size: 60px;
+    margin-left: 35%;
+    line-height: 60px;
+    opacity: 0.9;
+    filter: blur(0.5px);
+}
+
+.sidebar{
+    width: 50px;
+    height: 100vh;
+    /* background: linear-gradient(#00545d,#000729); */
+    background: transparent;
+    backdrop-filter: blur(2px);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.menu{
+    display: block;
+    width: 25px;
+    margin: 40px auto 0;
+    cursor: pointer;
+}
+
+.sociallinks img, .usefullinks img{
+    width: 25px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+.sociallinks{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.usefullinks{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+}
+
+
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -70px;
+}
+
+.bubbles img{
+  width: 50px;
+  animation: bubble 7s linear infinite;
+}
+
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 2;
+    }
+    100%{
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 25px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 5s;
+    width: 40px;
+    z-index: 2;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 8s;
+    width: 27px;
+    z-index: 2;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 4.5s;
+    width: 33px;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 3s;
+    width: 30px;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 6s;
+    width: 25px;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 6.5s;
+    width: 35px;
+}
+.bubbles img:nth-child(8){
+    animation-delay: 9s;
+    width: 30px;
+}
+
+
+ /* Yellow fish */
+
+/* Fish 1-1 */
+.fish1-1 img {
+    height: 30px;
+    width: 30px; 
+    position: absolute;
+    top: 40%;
+    left: -50px;
+    z-index: 4;
+    animation: fish1-1 30s linear infinite;
+    animation-delay: 0.5s;
+}
+  @keyframes fish1-1 {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    30%{
+      transform: translateX(-40px, -50px);
+    }
+    50%{
+      transform: translate(-50px, -60px);
+    }
+    100% {
+      transform: translate(1500px, 30vh);
+    }
+  }
+  
+
+   /* Fish 1-2 */
+   .fish1-2 img {
+    height: 30px;
+    width: 30px; 
+    position: absolute;
+    top: 40%;
+    left: -55px;
+    z-index: 4;
+    animation: fish1-2 30s linear infinite;
+    animation-delay: 1.5s;
+  }
+  @keyframes fish1-2 {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    30%{
+      transform: translate(-40px, -50px);
+    }
+    50%{
+      transform: translate(-60px, 30px);
+    }
+    100% {
+      transform: translate(1500px, 40vh);
+    }
+  }
+
+   /* Fish 1-3 */
+   .fish1-3 img {
+    height: 30px;
+    width: 30px; 
+    position: absolute;
+    top: 30%;
+    left: -55px;
+    z-index: 4;
+    animation: fish1-3 30s linear infinite;
+    animation-delay: 1.9s;
+  }
+  @keyframes fish1-3 {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    30%{
+      transform: translate(-40px, -50px);
+    }
+    50%{
+      transform: translate(-60px, 30px);
+    }
+    100% {
+      transform: translate(1500px, 20vh);
+    }
+  }
+
+          /* Yellow Fish Repeat */
+
+          /* yf1 */
+          .yf1 img {
+            height: 30px;
+            width: 30px; 
+            position: absolute;
+            top: 10%;
+            left: -50px;
+            z-index: 4;
+            animation: yf1 35s linear infinite;
+            animation-delay: 7s;
+        }
+          @keyframes yf1 {
+            0% {
+              transform: translate(0px, 0px);
+            }
+            30%{
+              transform: translateX(-40px, -50px);
+            }
+            50%{
+              transform: translate(-50px, -60px);
+            }
+            100% {
+              transform: translate(1500px, 10vh);
+            }
+          }
+          
+            /* yf2 */
+           .yf2 img {
+            height: 30px;
+            width: 30px; 
+            position: absolute;
+            top: 20%;
+            left: -55px;
+            z-index: 4;
+            animation: yf2 35s linear infinite;
+            animation-delay: 10s;
+          }
+          @keyframes yf2 {
+            0% {
+              transform: translate(0px, 0px);
+            }
+            30%{
+              transform: translate(-40px, -50px);
+            }
+            50%{
+              transform: translate(-60px, 30px);
+            }
+            100% {
+              transform: translate(1500px, 40vh);
+            }
+          }
+        
+           /* yF3 */
+           .yf3 img {
+            height: 30px;
+            width: 30px; 
+            position: absolute;
+            top: 25%;
+            left: -55px;
+            z-index: 4;
+            animation: yf3 35s linear infinite;
+            animation-delay: 12s;
+          }
+          @keyframes yf3 {
+            0% {
+              transform: translate(0px, 0px);
+            }
+            30%{
+              transform: translate(-40px, -50px);
+            }
+            50%{
+              transform: translate(-60px, 30px);
+            }
+            100% {
+              transform: translate(1500px, 20vh);
+            }
+          }
+
+
+          /* Red Fish */
+
+    /* Fish 2-1 */
+    .fish2-1 img {
+      height: 25px;
+      width: 25px; 
+      position: absolute;
+      top: 80%;
+      left: -50px;
+      z-index: 4;
+      animation: fish2-1 28.9s linear infinite;
+      animation-delay: 0s;
+    }
+    @keyframes fish2-1 {
+      0% {
+        transform: translate(0px, 0px);
+      }
+      30%{
+        transform: translate(-70px, -50px);
+      }
+      50%{
+        transform: translatex(-70px, -30px);
+      }
+      100% {
+        transform: translate(1500px, -40vh);
+      }
+    }
+ 
+      /* Fish 2-2 */
+      .fish2-2 img {
+        height: 30px;
+        width: 30px; 
+        position: absolute;
+        top: 70%;
+        left: -65px;
+        z-index: 4;
+        animation: fish2-2 28.9s linear infinite;
+        animation-delay: 0s;
+      }
+      @keyframes fish2-2 {
+        0% {
+          transform: translate(0px, 0px);
+        }
+        30%{
+          transform: translate(-70px, -50px);
+        }
+        50%{
+          transform: translatex(-70px, -30px);
+        }
+        100% {
+          transform: translate(1500px, -40vh);
+        }
+      }
+
+
+        /* Fish 2-3 */
+        .fish2-3 img {
+          height: 28px;
+          width: 28px; 
+          position: absolute;
+          top: 65%;
+          left: -55px;
+          z-index: 4;
+          animation: fish2-3 28.9s linear infinite;
+          animation-delay: 2s;
+        }
+        @keyframes fish2-3 {
+          0% {
+            transform: translate(0px, 0px);
+          }
+          30%{
+            transform: translate(-70px, -50px);
+          }
+          50%{
+            transform: translatex(-70px, -30px);
+          }
+          100% {
+            transform: translate(1500px, -40vh);
+          }
+        }
+
+        /* Fish 2-4 */
+        .fish2-4 img {
+          height: 32px;
+          width: 32px; 
+          position: absolute;
+          top: 75%;
+          left: -55px;
+          z-index: 4;
+          animation: fish2-4 28.9s linear infinite;
+          animation-delay: 0.7s;
+        }
+        @keyframes fish2-4 {
+          0% {
+            transform: translate(0px, 0px);
+          }
+          30%{
+            transform: translate(-70px, -50px);
+          }
+          50%{
+            transform: translatex(-70px, -30px);
+          }
+          100% {
+            transform: translate(1500px, -40vh);
+          }
+        }
+
+
+        /* Red Fish Repeat */
+
+        /* rf1 */
+    .rf1 img {
+      height: 25px;
+      width: 25px; 
+      position: absolute;
+      top: 55%;
+      left: -50px;
+      z-index: 4;
+      animation: rf1 32s linear infinite;
+      animation-delay: 9s;
+    }
+    @keyframes rf1 {
+      0% {
+        transform: translate(0px, 0px);
+      }
+      30%{
+        transform: translate(-70px, -50px);
+      }
+      50%{
+        transform: translatex(-70px, -30px);
+      }
+      100% {
+        transform: translate(1500px, -40vh);
+      }
+    }
+ 
+      /* rf2 */
+      .rf2 img {
+        height: 30px;
+        width: 30px; 
+        position: absolute;
+        top: 30%;
+        left: -65px;
+        z-index: 4;
+        animation: rf2 32s linear infinite;
+        animation-delay: 11s;
+      }
+      @keyframes rf2 {
+        0% {
+          transform: translate(0px, 0px);
+        }
+        30%{
+          transform: translate(-70px, -50px);
+        }
+        50%{
+          transform: translatex(-70px, -30px);
+        }
+        100% {
+          transform: translate(1500px, -40vh);
+        }
+      }
+
+
+        /* rf3 */
+        .rf3 img {
+          height: 28px;
+          width: 28px; 
+          position: absolute;
+          top: 40%;
+          left: -55px;
+          z-index: 4;
+          animation: rf3 31s linear infinite;
+          animation-delay: 13s;
+        }
+        @keyframes rf3 {
+          0% {
+            transform: translate(0px, 0px);
+          }
+          30%{
+            transform: translate(-70px, -50px);
+          }
+          50%{
+            transform: translatex(-70px, -30px);
+          }
+          100% {
+            transform: translate(1500px, -40vh);
+          }
+        }
+
+        /* rf4 */
+        .rf4 img {
+          height: 32px;
+          width: 32px; 
+          position: absolute;
+          top: 48%;
+          left: -55px;
+          z-index: 4;
+          animation: rf4 33s linear infinite;
+          animation-delay: 14s;
+        }
+        @keyframes rf4 {
+          0% {
+            transform: translate(0px, 0px);
+          }
+          30%{
+            transform: translate(-70px, -50px);
+          }
+          50%{
+            transform: translatex(-70px, -30px);
+          }
+          100% {
+            transform: translate(1500px, -40vh);
+          }
+        }
+
+        /* Green Fish */
+
+        /* Fish 3-1 */
+  .fish3-1 img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 80%;
+    right: -55px;
+    z-index: 4;
+    animation: fish3-1 30s linear infinite;
+  }
+  @keyframes fish3-1{
+    0% {
+      transform: translate(0px, 0px);
+    }
+    50% {
+      transform: translate(70px, 10vh);
+    }
+    100% {
+      transform: translate(-1500px, 0vh);
+    }
+  }
+  
+    /* Fish 3-2 */
+  .fish3-2 img{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 70%;
+    right: -55px;
+    z-index: 4;
+    animation: fish3-2 30s 2s linear infinite;
+  }
+  @keyframes fish3-2{
+    0% {
+      transform: translate(0px, 0px);
+    }
+    50% {
+      transform: translate(50px, 10vh);
+    }
+    100% {
+      transform: translate(-1500px, 0vh);
+    }
+  }
+
+  /* Fish3-3 */
+  .fish3-3 img{
+    width: 24px;
+    height: 23px;
+    position: absolute;
+    top: 80%;
+    right: -55px;
+    z-index: 4;
+    animation: fish3-3 30s linear infinite;
+    animation-delay: 10s;
+  }
+  @keyframes fish3-3{
+    0% {
+      transform: translate(0px, 0px);
+    }
+    50% {
+      transform: translate(50px, 10vh);
+    }
+    100% {
+      transform: translate(-1500px, 0vh);
+    }
+  }
+
+  /* Purple Fish  */
+
+  /* Fish 4-1 */
+  .fish4-1 img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10%;
+    right: -55px;
+    z-index: 4;
+    animation: fish4-1 30s linear infinite;
+    animation-delay: 0.8s;
+  }
+  @keyframes fish4-1{
+    0% {
+      transform: translate(0px, 0px);
+    }
+    50% {
+      transform: translate(50px, 10vh);
+    }
+    100% {
+      transform: translate(-1500px, 15vh);
+    }
+  }
+
+  /* Fish 4-2 */
+  .fish4-2 img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 25%;
+    right: -55px;
+    z-index: 4;
+    animation: fish4-2 31s linear infinite;
+    animation-delay: 0.9s;
+  }
+  @keyframes fish4-2{
+    0% {
+      transform: translate(0px, 0px);
+    }
+    50% {
+      transform: translate(50px, 10vh);
+    }
+    100% {
+      transform: translate(-1500px, 18vh);
+    }
+  }
+
+  /* Fish 4-3 */
+  .fish4-3 img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 30%;
+    right: -55px;
+    z-index: 4;
+    animation: fish4-3 31s linear infinite;
+    animation-delay: 10.5s;
+  }
+  @keyframes fish4-3{
+    0% {
+      transform: translate(0px, 0px);
+    }
+    50% {
+      transform: translate(50px, 10vh);
+    }
+    100% {
+      transform: translate(-1500px, 22vh);
+    }
+  }
+
+
+
+  .bubble {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: white;
+    bottom: -30px;
+    opacity: 0.01;
+    animation: bubble2 15s ease-in-out infinite,
+      sideWays 4s ease-in-out infinite alternate;
+  }
+  
+  @keyframes bubble2 {
+    0% {
+      transform: translateY(0%);
+      opacity: 0.06;
+    }
+    100% {
+      transform: translateY(-120vh);
+    }
+  }
+  
+  @keyframes sideWays {
+    0% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: 200px;
+    }
+  }
+  
+  .bubble--1 {
+    width: 10px;
+    height: 10px;
+    left: 10%;
+    animation-delay: 0.5s;
+    animation-duration: 16s;
+    opacity: 0.1;
+  }
+  
+  .bubble--2 {
+    width: 15px;
+    height: 15px;
+    left: 40%;
+    animation-delay: 1s;
+    animation-duration: 20s;
+    opacity: 0.1;
+  }
+  
+  .bubble--3 {
+    width: 10px;
+    height: 10px;
+    left: 30%;
+    animation-delay: 5s;
+    animation-duration: 20s;
+    opacity: 0.3;
+  }
+  
+  .bubble--4 {
+    width: 15px;
+    height: 15px;
+    left: 40%;
+    animation-delay: 8s;
+    animation-duration: 19s;
+    opacity: 0.2;
+  }
+  
+  .bubble--5 {
+    width: 20px;
+    height: 20px;
+    left: 60%;
+    animation-delay: 10s;
+    animation-duration: 15s;
+    opacity: 0.1;
+  }
+  
+  .bubble--6 {
+    width: 10px;
+    height: 10px;
+    left: 80%;
+    animation-delay: 3s;
+    animation-duration: 40s;
+    opacity: 0.02;
+  }
+  
+  .bubble--7 {
+    width: 15px;
+    height: 15px;
+    left: 90%;
+    animation-delay: -7s;
+    animation-duration: 25s;
+    opacity: 0.3;
+  }
+  
+  .bubble--9 {
+    width: 12px;
+    height: 12px;
+    left: 50%;
+    bottom: 30px;
+    animation-delay: -5s;
+    animation-duration: 19s;
+    opacity: 0.2;
+  }
+  
+  .bubble--10 {
+    width: 10px;
+    height: 10px;
+    left: 30%;
+    bottom: 30px;
+    animation-delay: -21s;
+    animation-duration: 16s;
+    opacity: 0.3;
+  }
+  
+  .bubble--11 {
+    width: 14px;
+    height: 14px;
+    left: 60%;
+    bottom: 30px;
+    animation-delay: -13.75s;
+    animation-duration: 20s;
+    opacity: 0.3;
+  }
+  
+  .bubble--12 {
+    width: 25px;
+    height: 25px;
+    left: 90%;
+    bottom: 30px;
+    animation-delay: -10.5s;
+    animation-duration: 19s;
+    opacity: 0.3;
+  }
+  
