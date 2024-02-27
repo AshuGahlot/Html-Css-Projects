@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #9c9ca0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculate{
+    width: 55vh;
+    height: 78vh;
+    border-radius: 40px;
+    background: #1c1c45;
+    box-shadow:  18px 18px 28px #69696b,
+                 -18px -18px 28px #cfcfd5;
+}
+
+.calculate .display{
+    display: flex;
+    height: 15vh;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    background: transparent;
+}
+
+.calculate .display input{
+    height: 80%;
+    margin-top: 30px;
+    text-align: right;
+    flex: 1;
+    font-size: 35px;
+    box-shadow: none;
+}
+
+.calculate form input{
+    border: 0;
+    outline: 0;
+    width: 45px;
+    height: 45px;
+    color: white;
+    margin: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background: #1c1c45;
+    box-shadow:  6px 6px 12px #141432,
+                 -6px -6px 12px #242458;
+    cursor: pointer;
+}
+
+form input#alldelete{
+    background: #FE9606;
+    box-shadow:  6px 6px 12px #141432,
+                 -6px -6px 12px #242458;
+    color: black;
+    font-weight: 550;
+}
+form input#delete{
+    background: #FE9606;
+    box-shadow:  6px 6px 12px #141432,
+                 -6px -6px 12px #242458;
+                 color: black;
+                 font-weight: 550;
+}
+form input.equal{
+    width: 125px;
+    background: #FE9606;
+    box-shadow:  6px 6px 12px #141432,
+                 -6px -6px 12px #242458;
+                 color: black;
+                 font-weight: 550;
+
+}
+form input#modulus{
+    background: #FE9606;
+    box-shadow:  6px 6px 12px #141432,
+                 -6px -6px 12px #242458;
+                 color: black;
+                 font-weight: 550;
+}
+form input#divide{
+    background: #FE9606;
+    box-shadow:  6px 6px 12px #141432,
+                 -6px -6px 12px #242458;
+                 color: black;
+                 font-weight: 550;
+}
+form input#multiply{
+    background: #FE9606;
+    box-shadow:  6px 6px 12px #141432,
+                 -6px -6px 12px #242458;
+                 color: black;
+                 font-weight: 550;
+}
+form input#minus{
+    background: #FE9606;
+    box-shadow:  6px 6px 12px #141432,
+                 -6px -6px 12px #242458;
+                 color: black;
+                 font-weight: 550;
+}
+form input#add{
+    background: #FE9606;
+    box-shadow:  6px 6px 12px #141432,
+                 -6px -6px 12px #242458;
+                 color: black;
+                 font-weight: 550;
+}
